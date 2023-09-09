@@ -17,13 +17,16 @@ for (var i = 0; i <numbers.length; i++)
        sumn += numbers[i];
     }
 } 
+console.log("the array"+ " "+ numbers)
 console.log( "the result of sum  is" +sumn);
+
 
 
 let btnn=document.querySelector('#btn');
 let div1=document.querySelector('#demo');
 btnn.addEventListener("click", function(){
-div1.innerHTML =  "the result of sum  is"+ sumn;
+
+div1.innerHTML = 'the array is'+numbers+'<br>' + "the result of sum  is"+ sumn;
 
 });
 
@@ -37,6 +40,7 @@ for (var i = 0; i < numbers.length; i++) {
 let btn3=document.querySelector('#btn');
 let div2=document.querySelector('#dome2');
 btn3.addEventListener("click", function(){
+  
 div2.innerHTML =  "the result of sum  is"+ sumnum22;
 
 });
@@ -94,3 +98,5 @@ btn4.addEventListener("click", function(){
    + braaDetails.age+ '<br>'+ 'the email is '+" "+ braaDetails.email;
   
   });
+
+
