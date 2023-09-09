@@ -1,8 +1,15 @@
 
+
+
+/* توليد مصفوفة عشوائية طريقة اولى */
 /* for (var i = 0; i < 10; i++) {
   numbers.push(Math.floor(Math.random() * 10));
-} */
+} 
+
+/* توليد مصفوفة عشوائية طريقة تانية */
+
 var numbers = [1,2,2,3,4,5,6,8,9,7];
+/* متغير لايجاد ناتج الجمع */
 var sumn= 0;
 for (var i = 0; i <numbers.length; i++)
 {
@@ -11,8 +18,14 @@ for (var i = 0; i <numbers.length; i++)
     }
 } 
 console.log( "the result of sum  is" +sumn);
-document.write("the result of sum  is" +sumn+"<br>") ;
 
+
+let btnn=document.querySelector('#btn');
+let div1=document.querySelector('#demo');
+btnn.addEventListener("click", function(){
+div1.innerHTML =  "the result of sum  is"+ sumn;
+
+});
 
 var sumnum22 = 0;
 for (var i = 0; i < numbers.length; i++) {
@@ -21,44 +34,24 @@ for (var i = 0; i < numbers.length; i++) {
    
   }
 }
-document.write("the result of sum  is" + "" +sumnum22 +"<br>");
+let btn3=document.querySelector('#btn');
+let div2=document.querySelector('#dome2');
+btn3.addEventListener("click", function(){
+div2.innerHTML =  "the result of sum  is"+ sumnum22;
+
+});
+
 console.log( "the result of sum  is" + "" +sumnum22)
 
 
-////
-
-/* var n=[]
-for (let i = 0; i <10; i++) {
-   n.push(Math.floor(Math.random()*10))
-    console.log(n)
-} */
 
 
 
-/* const numbers = [15, 2, ,10,15 ,1, 15];
-document.getElementById("demo").innerHTML = numbers.reduce(getSum, 0);
-
-function getSum(total, num) {
-  return total + Math.min(num);
-}
- */
+/* the end the part one */
 
 
 
-/* for (var i = 0; i < numbers.length; i++)
-{
- // index laste of 5
-    var sumnum22 = 0;
-    if(numbers[i] < 5)
-    {
-        sumnum22 += numbers[i];
-        document.write("the result of sum  is" + "" +sumnum22 +"<br>");
-        console.log( "the result of sum  is" + "" +sumnum22)
-    }
-} 
- */
 
-// the part b
 var braaDetails={
     fname:"braa",
     number:1649866,
@@ -72,19 +65,32 @@ console.log("the first element  name is"  +  "  " +braaDetails.fname);
 console.log("the second element number is"  +" " +braaDetails.number);
 console.log("the three element age is"  +" " +braaDetails.age);
 console.log("the four element email is"  +" " +braaDetails.email);
-
+document.write("<br>")
 // the print on page with document.write
+
+
+
 document.write(braaDetails);
-document.write("/*/*/*/*/*");
 document.write("<br>")
 document.write("the first element  name is"  +  "  " +braaDetails.fname);
-document.write("/*/*/*/*/*");
+
 document.write("<br>")
 document.write("the second element number is"  +" " +braaDetails.number);
-document.write("/*/*/*/*/*");
+
 document.write("<br>")
 document.write("the three element age is"  +" " +braaDetails.age)
-document.write("/*/*/*/*/*");
+
 document.write("<br>")
 document.write("the four element email is"  +" " +braaDetails.email);
-document.write("/*/*/*/*/*");
+
+
+
+const div3=document.querySelector('#demo3')
+const btn4=document.querySelector('#btn')
+btn4.addEventListener("click", function(){
+  div3.innerHTML =  braaDetails + '<br>'  + 'the name is '+ ' '+ braaDetails.fname+ 
+  '<br>'+"the number is"+ ' ' 
+  + braaDetails.number+'<br>'+'the age is'+ " "
+   + braaDetails.age+ '<br>'+ 'the email is '+" "+ braaDetails.email;
+  
+  });
