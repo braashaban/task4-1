@@ -1,9 +1,28 @@
+
+.container{
+width: 1000px;
+    border: 3px solid  linear-gradient(to right, #009966, #f0e458, purple);;
+    background-color: rgba(0, 0, 0, 0.316);
+    margin: auto;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+
+.main{
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+} 
 #demo{
     width: 300px;
      height: 200px ;
-      background-color: rgb(255, 21, 0);
+     background: linear-gradient(to right, #009966, #f0e458, purple);
       text-align: center;
-      font-size: 23px;
+      font-size: 28px;
       color: #fff;
       display: flex;
       justify-content: center;
@@ -12,12 +31,13 @@
       border-radius: 20px;
 }
 
+
 #dome2{
     width: 300px;
      height: 200px ;
-      background-color: rgb(100, 25, 0);
+     background: linear-gradient(to right, #009966, #f0e458, purple);
       text-align: center;
-      font-size: 23px;
+      font-size: 28px;
       color: #fff;
       display: flex;
       justify-content: center;
@@ -29,23 +49,29 @@
 #demo3{
     width: 600px;
      height: 300px ;
-      background-color: rgb(0, 83, 100);
+      background: linear-gradient(to right, yellow, #009966, purple);
       text-align: center;
-      font-size: 23px;
+      font-size: 28px;
       color: #fff;
       display: flex;
       justify-content: center;
       align-items: center;
       margin-bottom: 20px;
       border-radius: 20px;
+      margin: auto;
+}
+.btn{
+    width: 300px;
+    margin: auto;
 }
 button{
-    width: 150px;
+    width: 250px;
     background-color: deepskyblue;
     border-radius: 30px;
     color: #fff;
     padding: 15px;
     border: none;
     margin-bottom: 20px;
-  
+    font-size: 30px;
+
 }
