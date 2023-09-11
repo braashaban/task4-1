@@ -40,12 +40,12 @@ let btn3 = document.querySelector('#btn');
 let div2 = document.querySelector('#dome2');
 btn3.addEventListener("click", function () {
 
-  div2.innerHTML = "the result of sum  is" + sumnum22;
+  div2.innerHTML = "the biggest of five is" + sumnum22;
   div1.style.background="#009966";
  
 });
 
-console.log("the result of sum  is" + "" + sumnum22)
+console.log("the biggest of five  is" + "" + sumnum22)
 
 /* the end the part one */
 
